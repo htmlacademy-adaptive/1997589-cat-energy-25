@@ -10,7 +10,7 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo-icon">
-      <img src="img/logo-icon-mobile.svg" width="33.3" height="37.6" alt="Магазин «Кэт Энерджи»">
+      <img src="img/logo-icon-mobile.svg" width="33" height="37" alt="Магазин «Кэт Энерджи»">
     </a>
     <a class="main-header__logo">
       <img src="img/logo.svg" width="101" height="18" alt="Магазин «Кэт Энерджи»">
@@ -50,7 +50,7 @@
           <p class="promo__slogan">
             Занялся собой? Займись котом!
           </p>
-          <button class="promo__button" type="button">Подобрать программу</button>
+          <a class="promo__button" href="form.html">Подобрать программу</a>
         </div>
       </header>
       <div class="promo__accent">
@@ -85,28 +85,28 @@
         <h2 class="features__title">Как это работает</h2>
         <ul class="features__list">
           <li class="features__item">
-            <i class="features__icon"></i>
+            <svg class="features__icon"></svg>
             <p class="features__text">Функциональное питание
               содержит только полезные
               питательные вещества.
             </p>
           </li>
           <li class="features__item">
-            <i class="features__icon"></i>
+            <svg class="features__icon"></svg>
             <p class="features__text">Выпускается в виде порошка,
               который нужно лишь залить
               кипятком и готово.
             </p>
           </li>
           <li class="features__item">
-            <i class="features__icon"></i>
+            <svg class="features__icon"></svg>
             <p class="features__text">
               Замените один-два приема обычной еды на наше
               функциональное питание.
             </p>
           </li>
           <li class="features__item">
-            <i class="features__icon"></i>
+            <svg class="features__icon"></svg>
             <p class="features__text">
               Уже через месяц наслаждайтесь
               изменениями к лучшему
@@ -125,37 +125,41 @@
         <div class="example__facts facts">
           <div class="facts__primary">
             <div class="facts__fact">
-              <p class="facts-result">5 кг</p>
-              <p class="facts-description">снижение веса</p>
+              <p class="facts__result">5 кг</p>
+              <p class="facts__description">снижение веса</p>
             </div>
             <div class="facts">
-              <p class="facts-result">60 дней</p>
-              <p class="facts-description">затрачено времени</p>
+              <p class="facts__result">60 дней</p>
+              <p class="facts__description">затрачено времени</p>
             </div>
           </div>
           <div class="facts__fact facts__fact--secondary">
-            <p class="facts-result">Затраты на питание</p>
-            <p class="facts-description">15 000 рублей</p>
+            <p class="facts__result">Затраты на питание</p>
+            <p class="facts__description">15 000 рублей</p>
           </div>
         </div>
         <section class="example__compare compare">
           <section class="compare__slider">
-            <div class="compare-wrapper">
+            <div class="compare__wrapper">
               <img class="compare__cat-image" src="img/before-mobile.jpg" width="280" height="232"
                 alt="Фото толстого кота">
             </div>
-            <div class="compare-wrapper">
+            <div class="compare__wrapper">
               <img class="compare__cat-image" src="img/after-mobile.jpg" width="243" height="232"
                 alt="Фото худого кота">
             </div>
           </section>
-          <section class="compare__toggle toggle">
-            <div class="toggle__before">
-              <p>Было</p>
+          <section class="compare__range range">
+            <div class="range__before">
+              <button type="button">Было</button>
             </div>
-            <div class="toggle__line"><span></span></div>
-            <div class="toggle__after">
-              <p>Стало</p>
+            <div class="range__line">
+              <button type="button">
+                <span class="visually-hidden">Переключить</span>>
+              </button>
+            </div>
+            <div class="range__after">
+              <button type="button">Стало</button>
             </div>
           </section>
         </section>
